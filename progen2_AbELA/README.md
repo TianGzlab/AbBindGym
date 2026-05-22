@@ -41,6 +41,12 @@ python progen2_AbELA/train_abela_lora.py \
   --limit-records 2
 ```
 
+Expected output: a small LoRA smoke-test run under
+`results/progen2_AbELA/abela_smoke/`.
+
+Expected runtime: minutes on a single NVIDIA GPU after ProGen2-OAS weights are
+available locally. Runtime is dominated by checkpoint loading.
+
 ## Fine-Tuning
 
 ```bash

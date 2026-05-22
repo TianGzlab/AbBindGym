@@ -1,0 +1,6 @@
+mutation_id,wildtype_sequence,mutant,DMS_score
+synthetic_001,ACDEFGHIK,A1V,0.10
+synthetic_002,ACDEFGHIK,C2S,0.30
+synthetic_003,ACDEFGHIK,D3E,0.70
+synthetic_004,ACDEFGHIK,F5Y,0.90
+synthetic_005,ACDEFGHIK,H7R,0.55

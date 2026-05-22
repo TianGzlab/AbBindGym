@@ -54,3 +54,10 @@ python supervised/common/train.py \
 
 Saved checkpoints, predictions, plots, and per-fold outputs should remain
 outside public commits unless explicitly released as aggregate summaries.
+
+Expected output: fold-level metrics, predictions and checkpoints under the
+selected `--results-root`.
+
+Expected runtime: hours per dataset/model combination on an NVIDIA A800 80 GB
+GPU, depending on model size, sequence lengths and cache state. CPU execution is
+only suitable for very small debugging runs.

@@ -23,6 +23,7 @@ results/**/logits_cache/
 results/**/preds/
 results/**/plots/
 wandb/
+examples/demo_output/
 
 # Full raw and processed benchmark data are archived on Zenodo, not GitHub.
 data/*

@@ -56,6 +56,13 @@ CACHE_ROOT=results/zero_shot/logits_cache \
 bash zero_shot/modelzoo/IgBert/run_IgBert_fitness.sh
 ```
 
+Expected output: per-mutation CSV files under
+`results/zero_shot/model_outputs/<model>/<dataset>/`.
+
+Expected runtime: model- and dataset-dependent; small model-family runs are
+typically minutes to hours on a single NVIDIA A800 80 GB GPU. CPU execution is
+not recommended for full model runners.
+
 For AIDO, keep the structure-tokenizer codebook outside this repository and set
 `AIDO_CODEBOOK_PATH`.
 
@@ -66,3 +73,17 @@ python zero_shot/run/calc_metric.py <model-output-dir> \
   --output-dir results/zero_shot/final_metrics \
   --label <model-label>
 ```
+
+Expected output: one aggregate metric CSV per model label under
+`results/zero_shot/final_metrics/`.
+
+For a no-download check of the mutation parsing and metric path, run:
+
+```bash
+python examples/run_demo.py --output examples/demo_output
+```
+
+Expected output: `examples/demo_output/scores.csv` and
+`examples/demo_output/metrics.csv`.
+
+Expected runtime: less than 1 minute on CPU.

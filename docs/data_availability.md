@@ -18,8 +18,10 @@ according to the source publications and terms of use.
 
 ## Processed benchmark data
 
-Processed benchmark data used for the paper are provided through the data
-archive described in the manuscript, not through GitHub.
+Processed benchmark data used for the paper are provided through the Zenodo
+archive, not through GitHub:
+
+https://doi.org/10.5281/zenodo.19911284
 
 ## Controlled-access AbELA-Q
 
