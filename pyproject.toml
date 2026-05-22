@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abbindgym"
+version = "0.1.0"
+description = "Benchmarking and ProGen2 AbELA utilities for antibody-antigen protein language models."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+dependencies = [
+  "accelerate>=0.26",
+  "filelock>=3.12",
+  "matplotlib>=3.7",
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "pyyaml>=6.0",
+  "safetensors>=0.4",
+  "scikit-learn>=1.3",
+  "scipy>=1.10",
+  "seaborn>=0.13",
+  "tokenizers>=0.15,<0.22",
+  "torch>=2.0",
+  "tqdm>=4.66",
+  "transformers>=4.38,<5",
+]
+
+[project.optional-dependencies]
+model-zoo = [
+  "ablang2==0.2.1",
+  "ankh==1.10.0",
+  "antiberty==0.1.3",
+  "biopython>=1.83",
+  "biotite>=1.0",
+  "datasets>=2.20",
+  "einops>=0.8",
+  "esm>=3.0",
+  "modelgenerator>=0.1.3",
+  "peft>=0.13",
+  "rotary-embedding-torch>=0.8",
+  "sentencepiece>=0.1.99",
+  "vplm==0.0.1",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["supervised*", "zero_shot*", "progen2_AbELA*", "progen*"]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "progen2_AbELA"]
+testpaths = ["tests"]

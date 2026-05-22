@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.python-version
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# External model assets.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+
+# Local model checkpoints, generated outputs and caches.
+progen2_AbELA/checkpoints/
+results/**/checkpoints/
+results/**/model_outputs/
+results/**/logits_cache/
+results/**/preds/
+results/**/plots/
+wandb/
+
+# Full raw and processed benchmark data are archived on Zenodo, not GitHub.
+data/*
+!data/.gitkeep
+!data/supervised
+data/supervised/*
+!data/supervised/.gitkeep
+!data/zero_shot
+data/zero_shot/*
+!data/zero_shot/.gitkeep

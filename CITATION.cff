@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use AbBindGym, please cite the associated manuscript and this software repository."
+type: software
+title: "AbBindGym: dual-paradigm benchmarking for antibody-antigen PLM selection"
+authors:
+  - family-names: Zheng
+    given-names: Jianrong
+  - name: "The AbBindGym contributors"
+version: "0.1.0"
+date-released: "2026-04-28"
+repository-code: "https://github.com/TianGzlab/AbBindGym"
+url: "https://github.com/TianGzlab/AbBindGym"
+license: "MIT"
+abstract: "AbBindGym provides code, manifests and aggregate results for dual-paradigm benchmarking of protein language models in antibody-antigen binding prediction, covering zero-shot mutation scoring and supervised frozen-backbone affinity regression."
